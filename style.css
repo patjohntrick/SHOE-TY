@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body p {
+  font-weight: 500;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: static;
+  width: 97%;
+  margin: 10px 10px 0 10px;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 1rem 1.5rem;
+}
+
+nav .nav-bar {
+  display: none;
+}
+
+nav .query {
+  display: none;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  padding: 2px 0;
+}
+
+nav ul li a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1px black;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+nav ul li a:after {
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+nav ul li a:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 350px;
+}
+
+nav .logo h1 {
+  font-size: 1.8em;
+  font-weight: 900;
+}
+
+nav .logo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 200px;
+}
+
+nav .second-links {
+  width: 300px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .hero {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .hero .img-container {
+  width: 70vw;
+}
+
+main .hero .img-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .hero .hero-text {
+  margin-left: 1.5rem;
+  width: 25vw;
+  padding-bottom: 3rem;
+}
+
+main .hero .hero-text .logo {
+  margin-bottom: 27rem;
+}
+
+main .hero .hero-text .logo h1 {
+  font-weight: 900;
+  font-size: 4em;
+}
+
+main .hero .hero-text .logo p {
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+main .hero .hero-text .logo a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  padding: 10px 0 3px 0;
+  position: relative;
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+
+main .hero .hero-text .logo a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  border-bottom: 1px solid black;
+  width: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .hero .hero-text .logo a:hover::before {
+  width: 100%;
+}
+
+main .hero img {
+  width: 100%;
+}
+
+main .hero h3 {
+  margin: 0.5rem 0;
+}
+
+main .hero p {
+  margin: 0.5rem 0;
+}
+
+main .hero a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  padding: 10px 0 3px 0;
+  position: relative;
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+
+main .hero a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  border-bottom: 1px solid black;
+  width: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .hero a:hover::before {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

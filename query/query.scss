@@ -1,0 +1,55 @@
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+  nav .logo ul,
+  nav .second-links {
+    display: none;
+  }
+  nav {
+    .logo {
+      margin: 0;
+      width: auto;
+    }
+    .nav-bar {
+      display: block;
+      font-size: 20px;
+      z-index: 10;
+      cursor: pointer;
+      .fa-times {
+        display: none;
+      }
+    }
+    .nav-bar.nav-bar-active {
+      display: block;
+      font-size: 20px;
+      z-index: 10;
+      cursor: pointer;
+      .fa-bars {
+        display: none;
+      }
+      .fa-times {
+        display: block;
+      }
+    }
+    .query.query-active {
+      display: flex;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 97.5%;
+      height: 97.5vh;
+      background-color: rgb(255, 255, 255);
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-evenly;
+      a::after {
+        content: none;
+      }
+    }
+    .query {
+      display: none;
+    }
+  }
+}
