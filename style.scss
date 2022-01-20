@@ -20,8 +20,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 98%;
-  margin: 10px auto;
+  margin-top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 1rem 1.5rem;
+  position: fixed;
+  z-index: 1000;
   .nav-bar {
     display: none;
   }
@@ -78,10 +82,10 @@ nav {
 main {
   position: relative;
   .hero {
-    position: absolute;
-    z-index: -1;
-    margin-top: -90px;
+    // position: absolute;
+    // margin-top: -90px;
     display: flex;
+    padding-right: 20px;
     justify-content: space-between;
     align-items: flex-end;
     .img-container {
@@ -92,7 +96,6 @@ main {
       }
     }
     .hero-text {
-      margin-left: 1.5rem;
       width: 25vw;
       padding-bottom: 3rem;
       #sub-hero .img-container {
@@ -117,6 +120,7 @@ main {
           position: relative;
           transition: 2s ease-in-out;
           font-size: clamp(0.8rem, 5vw, 1rem);
+          cursor: pointer;
         }
         a::before {
           content: "";
@@ -147,6 +151,7 @@ main {
       padding: 10px 0 3px 0;
       position: relative;
       transition: 2s ease-in-out;
+      cursor: pointer;
     }
     a::before {
       content: "";
@@ -159,5 +164,53 @@ main {
     a:hover::before {
       width: 100%;
     }
+  }
+  .section-one {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .box {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 400px;
+      .img-container {
+        width: 200px;
+      }
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+      .text-container {
+        p {
+          margin-bottom: 0.5rem;
+        }
+      }
+      a {
+        text-decoration: none;
+        font-weight: $p-wieght;
+        color: $pcolor;
+        padding: 10px 0 3px 0;
+        position: relative;
+        transition: 2s ease-in-out;
+        cursor: pointer;
+      }
+      a::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        border-bottom: 1px solid $pcolor;
+        width: 0;
+        transition: 0.3s;
+      }
+      a:hover::before {
+        width: 100%;
+      }
+    }
+  }
+  .section-one .box:not(:last-child) {
+    margin-bottom: 1rem;
   }
 }
