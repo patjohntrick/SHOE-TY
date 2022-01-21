@@ -1,12 +1,25 @@
 const navBar = document.querySelector('.nav-bar');
 const query = document.querySelector('.query');
 const navContainer = document.querySelector('.nav-container');
-const bodyElement = document.getElementById('body');
+const overLayer = document.querySelector('.overlayer');
+const imgChanger = document.querySelector('#img-changer');
+const imgChange = document.querySelector('#img-change');
+
+const imgs =['img/p10.jpg'];
+
+// function mouseOut(){
+//     imgChange.src = "";
+// }
+// function mouseOver(e){
+//     // var imgChange = e.id;
+//     imgChange.src = imgs[0]
+//     console.log(imgChange);
+// }
 
 navBar.addEventListener("click", function() {
     query.classList.toggle("query-active")
     navBar.classList.toggle('nav-bar-active')
-    bodyElement.classList.toggle('overlay')
+    overLayer.classList.toggle('overlayed')
 })
 
 window.addEventListener('scroll', function() {
@@ -20,5 +33,5 @@ window.addEventListener('scroll', function() {
         navContainer.style.transition = ".3s";
     }
 
-    console.log(scroll);
+    // console.log(scroll);
 });

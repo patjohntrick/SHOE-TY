@@ -1,5 +1,5 @@
 $pcolor: #13875e;
-$picture-background: #d4d4d4;
+$picture-background: #e7e7e7;
 $p-wieght: 500;
 
 * {
@@ -13,6 +13,17 @@ body {
   // overflow-x: hidden;
   p {
     font-weight: $p-wieght;
+  }
+  .overlayer {
+    position: fixed;
+    z-index: 100;
+    transition: 1s;
+  }
+  .overlayer.overlayed {
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
   }
 }
 nav {
@@ -212,5 +223,113 @@ main {
   }
   .section-one .box:not(:last-child) {
     margin-bottom: 1rem;
+  }
+
+  .section-two {
+    width: 95%;
+    margin: auto;
+    margin-top: 2rem;
+    h2 {
+      margin: 0 0 1.5rem 0;
+      font-size: clamp(2rem, 2vw, 2rem);
+    }
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      .box {
+        width: 400px;
+        .img-container {
+          height: 350px;
+          margin-bottom: 0.5rem;
+          background-color: $picture-background;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          position: relative;
+          img {
+            width: 100%;
+            object-fit: cover;
+            transition: 0.3s;
+          }
+          #img-change {
+            display: block;
+          }
+          #img-changed {
+            display: none;
+            object-fit: contain;
+            height: 100%;
+          }
+          #arrow {
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+            // height: 70px;
+            // width: 70px;
+            // background-color: $picture-background;
+            // padding: 0.5rem;
+            // border-radius: 50%;
+            // z-index: 100;
+            // animation: shopee 1s;
+            display: none;
+          }
+        }
+        .img-container:hover::before {
+          content: "";
+          position: absolute;
+          z-index: 100;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.397);
+        }
+        .img-container:hover {
+          #arrow {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 70px;
+            width: 70px;
+            background-color: $picture-background;
+            padding: 0.5rem;
+            border-radius: 50%;
+            z-index: 100;
+            animation: shopee 0.3s;
+          }
+          // display: block;
+
+          // @keyframes shopee {
+          //   0% {
+          //     transform: rotate(0deg);
+          //   }
+          //   50% {
+          //     transform: rotate(45deg);
+          //   }
+          //   100% {
+          //     transform: rotate(0deg);
+          //   }
+          // }
+        }
+        @keyframes shopee {
+          0% {
+            transform: rotate(0deg);
+          }
+          50% {
+            transform: rotate(45deg);
+          }
+          100% {
+            transform: rotate(0deg);
+          }
+        }
+        .text-container {
+          h3 {
+            color: $pcolor;
+          }
+        }
+      }
+    }
   }
 }
