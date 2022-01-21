@@ -1,5 +1,5 @@
 $pcolor: #13875e;
-$picture-background: #e7e7e7;
+$picture-background: #ececec;
 $p-wieght: 500;
 
 * {
@@ -11,6 +11,7 @@ $p-wieght: 500;
 body {
   // width: 100vw;
   // overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
   p {
     font-weight: $p-wieght;
   }
@@ -240,6 +241,7 @@ main {
       align-items: center;
       .box {
         width: 400px;
+        margin-bottom: 1rem;
         .img-container {
           height: 350px;
           margin-bottom: 0.5rem;
@@ -285,6 +287,19 @@ main {
           background-color: rgba(0, 0, 0, 0.397);
         }
         .img-container:hover {
+          @keyframes shopee {
+            0% {
+              opacity: 0;
+              transform: translate(-50%, -50%) rotate(0deg);
+            }
+            50% {
+              transform: translate(-50%, -50%) rotate(45deg);
+            }
+            100% {
+              opacity: 1;
+              transform: translate(-50%, -50%) rotate(0deg);
+            }
+          }
           #arrow {
             display: block;
             position: absolute;
@@ -297,7 +312,7 @@ main {
             padding: 0.5rem;
             border-radius: 50%;
             z-index: 100;
-            animation: shopee 0.3s;
+            animation: shopee 0.5s;
           }
           // display: block;
 
@@ -312,17 +327,6 @@ main {
           //     transform: rotate(0deg);
           //   }
           // }
-        }
-        @keyframes shopee {
-          0% {
-            transform: rotate(0deg);
-          }
-          50% {
-            transform: rotate(45deg);
-          }
-          100% {
-            transform: rotate(0deg);
-          }
         }
         .text-container {
           h3 {

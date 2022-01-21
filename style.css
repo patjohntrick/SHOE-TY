@@ -6,6 +6,10 @@
   font-family: "Alegreya Sans", sans-serif;
 }
 
+body {
+  background-color: white;
+}
+
 body p {
   font-weight: 500;
 }
@@ -340,12 +344,13 @@ main .section-two .product-container {
 
 main .section-two .product-container .box {
   width: 400px;
+  margin-bottom: 1rem;
 }
 
 main .section-two .product-container .box .img-container {
   height: 350px;
   margin-bottom: 0.5rem;
-  background-color: #e7e7e7;
+  background-color: #ececec;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,6 +393,40 @@ main .section-two .product-container .box .img-container:hover::before {
   background-color: rgba(0, 0, 0, 0.397);
 }
 
+@-webkit-keyframes shopee {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes shopee {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
 main .section-two .product-container .box .img-container:hover #arrow {
   display: block;
   position: absolute;
@@ -397,42 +436,12 @@ main .section-two .product-container .box .img-container:hover #arrow {
           transform: translate(-50%, -50%);
   height: 70px;
   width: 70px;
-  background-color: #e7e7e7;
+  background-color: #ececec;
   padding: 0.5rem;
   border-radius: 50%;
   z-index: 100;
-  -webkit-animation: shopee 0.3s;
-          animation: shopee 0.3s;
-}
-
-@-webkit-keyframes shopee {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-@keyframes shopee {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
+  -webkit-animation: shopee 0.5s;
+          animation: shopee 0.5s;
 }
 
 main .section-two .product-container .box .text-container h3 {
