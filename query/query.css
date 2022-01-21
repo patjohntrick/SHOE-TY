@@ -2,9 +2,6 @@
   main .hero .hero-text .logo {
     margin-bottom: 15rem;
   }
-  main .section-two .product-container .box {
-    width: 350px;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -12,13 +9,16 @@
     margin-bottom: 10rem;
   }
   main .section-two .product-container .box {
-    width: 300px;
+    width: 30%;
   }
 }
 
 @media screen and (max-width: 880px) {
   main .hero .hero-text .logo {
     margin-bottom: 5rem;
+  }
+  main .section-two .product-container .box {
+    width: 48%;
   }
 }
 
@@ -87,7 +87,53 @@
     display: none;
   }
   main .section-two .product-container .box {
-    width: 350px;
+    width: 45%;
+  }
+  main footer .box-container .box:nth-child(1) {
+    width: 100%;
+    word-break: break-all;
+  }
+  main footer .box-container .box {
+    width: 100%;
+    word-break: break-all;
+    margin-bottom: 1rem;
+  }
+  main footer .box-container .box .footer-text-about {
+    display: none;
+  }
+  main footer .box-container .box .footer-text-about.show-text {
+    display: block;
+  }
+  main footer .box-container .box .title-container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  }
+  main footer .box-container .box .title-container .cross {
+    position: relative;
+    padding: 1rem;
+    display: block;
+  }
+  main footer .box-container .box .title-container .cross .vert {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  main footer .box-container .box .title-container .cross .hor-about {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  main footer .box-container .box .title-container .cross .hor-about.hor-hide {
+    opacity: 0;
   }
 }
 
@@ -194,7 +240,13 @@
     margin-bottom: 0;
   }
   main .section-two .product-container .box {
-    width: 320px;
+    width: 48%;
+  }
+  main .section-three .box-container .box {
+    width: 100%;
+  }
+  main .section-three .box-container .box:not(:last-child) {
+    margin-bottom: 1rem;
   }
 }
 
@@ -225,10 +277,10 @@
 
 @media screen and (max-width: 425px) {
   main .hero .hero-text .logo {
-    top: 10%;
+    top: 7%;
     left: 50%;
-    -webkit-transform: translate(-50%, -10%);
-            transform: translate(-50%, -10%);
+    -webkit-transform: translate(-50%, -7%);
+            transform: translate(-50%, -7%);
   }
   nav {
     width: 95%;
