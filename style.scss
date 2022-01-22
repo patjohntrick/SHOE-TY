@@ -1,7 +1,9 @@
 $pcolor: #13875e;
 $picture-background: #ececec;
 $p-wieght: 500;
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +13,7 @@ $p-wieght: 500;
 body {
   // width: 100vw;
   // overflow-x: hidden;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(250, 250, 250);
   p {
     font-weight: $p-wieght;
   }
@@ -72,6 +74,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 350px;
+    cursor: pointer;
     h1 {
       font-size: 1.8em;
       font-weight: 900;
@@ -371,33 +374,7 @@ main {
           justify-content: space-between;
           align-items: center;
           .cross {
-            // position: relative;
-            // padding: 1rem;
             display: none;
-            // .vert {
-            //   position: absolute;
-            //   width: 10px;
-            //   height: 2px;
-            //   background-color: rgba(0, 0, 0, 0.8);
-            //   top: 50%;
-            //   left: 50%;
-            //   transform: translate(-50%, -50%);
-            // }
-            // .hor {
-            //   position: absolute;
-            //   width: 2px;
-            //   height: 10px;
-            //   background-color: rgba(0, 0, 0, 0.8);
-            //   top: 50%;
-            //   left: 50%;
-            //   transform: translate(-50%, -50%);
-            // }
-            //   .hor {
-            //     position: absolute;
-            //     width: 2px;
-            //     height: 5px;
-            //   }
-            // }
           }
         }
         p {

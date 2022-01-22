@@ -10,31 +10,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800;900&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/query/query.css">
+    <link rel="stylesheet" href="query/query.css">
     <title>SHOE-TY</title>
 </head>
 <body id="body">
     <div class="overlayer"></div>
     <nav class="nav-container">
         <div class="logo">
-            <h1>SHOE-TY</h1>
+            <h1 data-aos="fade-down" data-aos-delay="50">SHOE-TY</h1>
             <ul class="first-links nav-links">
-                <li><a href="">Shop</a></li>
-                <li><a href="">Shoecare</a></li>
+                <li data-aos="fade-down" data-aos-delay="150"><a href="#featured" id="shop-link-primary">Shop</a></li>
+                <li data-aos="fade-down" data-aos-delay="250"><a href="#section-one" id="shoecare-link-primary">Shoecare</a></li>
             </ul>
         </div>
         <ul class="second-links nav-links">
-            <li><a href="">Products</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact us</a></li>
+            <li data-aos="fade-down" data-aos-delay="300"><a href="#section-three" id="products-link-primary">Products</a></li>
+            <li data-aos="fade-down" data-aos-delay="400"><a href="#footer" id="about-link-primary">About</a></li>
+            <li data-aos="fade-down" data-aos-delay="550"><a href="#footer" id="contact-link-primary">Contact us</a></li>
         </ul>
         <ul class="query" id="query">
-            <li><a href="">Shop</a></li>
-            <li><a href="">Shoecare</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact us</a></li>
+            <li><a href="#featured" id="shop-link-primary" class="secondary-link">Shop</a></li>
+            <li><a href="#section-one" id="shoecare-link-primary" class="secondary-link">Shoecare</a></li>
+            <li><a href="#section-three" id="products-link-secondary" class="secondary-link">Products</a></li>
+            <li><a href="#footer" id="about-link-secondary" class="secondary-link">About</a></li>
+            <li><a href="#footer" id="contact-link-secondary" class="secondary-link">Contact us</a></li>
         </ul>
         <div class="nav-bar">
             <i class="fas fa-bars"></i>
@@ -43,20 +44,20 @@
     </nav>
     <main>
         <div class="hero">
-            <div class="img-container">
+            <div class="img-container" data-aos="fade-right" data-aos-delay="1000">
                 <img src="img/p17.jpg" alt="">
             </div>
             <div class="hero-text">
                 <div class="logo">
-                    <h1>SHOE-TY</h1>
-                    <p>Good shoes takes you to good places. I make shoe contact before eye contact.</p>
-                    <a href="">Read more</a>
+                    <h1 data-aos="fade-up" data-aos-delay="1300" data-aos-offset="0">SHOE-TY</h1>
+                    <p data-aos="fade-up" data-aos-delay="1500" data-aos-offset="0">Good shoes takes you to good places. I make shoe contact before eye contact.</p>
+                    <a data-aos="fade-up" data-aos-delay="1700" data-aos-offset="0" href="">Read more</a>
                 </div>
                 <div id="sub-hero">
-                    <div class="img-container">
+                    <div class="img-container" data-aos="fade-up">
                         <img src="img/product3.jpg" alt="">
                     </div>
-                    <div class="text-container">
+                    <div class="text-container" data-aos="fade-up">
                         <h3>Last chance</h3>
                         <h2>Shop the sale collection now!</h2>
                         <p>Choose your stuff with our 50% off today</p>
@@ -66,8 +67,8 @@
             </div>
         </div>
 
-        <section class="section-one">
-            <div class="box box-one">
+        <section class="section-one" id="section-one">
+            <div class="box box-one" data-aos="fade-up">
                 <div class="img-container">
                     <img src="img/packaging.jpg" alt="">
                 </div>
@@ -76,7 +77,7 @@
                     <a href="">Shop now</a>
                 </div>
             </div>
-            <div class="box box-two">
+            <div class="box box-two" data-aos="fade-up" data-aos-delay="200">
                 <div class="img-container">
                     <img src="img/who.jpg" alt="">
                 </div>
@@ -85,7 +86,7 @@
                     <a href="">Shop now</a>
                 </div>
             </div>
-            <div class="box box-three">
+            <div class="box box-three" data-aos="fade-up" data-aos-delay="400">
                 <div class="img-container">
                     <img src="img/made.jpg" alt="">
                 </div>
@@ -97,9 +98,9 @@
         </section>
 
         <section class="section-two">
-            <h2>Our featured products</h2>
+            <h2 id="featured" data-aos="fade-right">Our featured products</h2>
             <div class="product-container">
-                <div class="box box-one">
+                <div class="box box-one" data-aos="fade-up">
                     <a href="https://shopee.ph/Original-women's-shoes-sneakers-women's-summer-design-thick-sole-(one-size-smaller)-i.403556620.9080428976?sp_atk=fe03619c-ad12-4080-a1c6-624610ec386a" target="_blank">
                         <div class="img-container" id="img-changer3">
                             <img src="img/product2.png" alt="" id="img-change">
@@ -112,7 +113,7 @@
                         <p>P1299.00</p>
                     </div>
                 </div>
-                <div class="box box-two">
+                <div class="box box-two" data-aos="fade-up">
                     <a href="https://shopee.ph/Original-women's-shoes-sneakers-women's-summer-design-thick-sole-(one-size-smaller)-i.403556620.9080428976?sp_atk=fe03619c-ad12-4080-a1c6-624610ec386a" target="_blank">
                         <div class="img-container" id="img-changer3">
                             <img src="img/p10.png" alt="" id="img-change">
@@ -125,7 +126,7 @@
                         <p>P1299.00</p>
                     </div>
                 </div>
-                <div class="box box-three">
+                <div class="box box-three" data-aos="fade-up">
                     <a href="https://shopee.ph/NEW-SNEAKERS-FOR-MEN-WITH-GOOD-QUALITY-i.52678960.9236467436?sp_atk=84b238ad-69d0-4a5c-b877-dc73e5d84d9a" target="_blank">
                         <div class="img-container" id="img-changer3">
                             <img src="img/p8.png" alt="" id="img-change">
@@ -138,7 +139,7 @@
                         <p>P1299.00</p>
                     </div>
                 </div>
-                <div class="box box-four">
+                <div class="box box-four"data-aos="fade-up">
                     <a href="https://shopee.ph/NIKE-AJ1-Men-Basketball-Shoes-Sneaker-High-Cut-Air-Jordan-SHOES-FOR-WOMEN-i.400638839.7782528415?sp_atk=bc7d3ef0-b896-4a57-b2f6-78e0ee08fb4d" target="_blank">
                         <div class="img-container" id="img-changer3">
                             <img src="img/p9.png" alt="" id="img-change">
@@ -151,7 +152,7 @@
                         <p>P1299.00</p>
                     </div>
                 </div>
-                <div class="box box-five">
+                <div class="box box-five" data-aos="fade-up">
                     <a href="https://shopee.ph/Nike-Airmax-270-Rubber-Sneakers-Shoes-for-Men-Size-i.278420509.4645725362?sp_atk=a2ca8147-5bda-41e9-8fba-f936d45844c8" target="_blank">
                         <div class="img-container" id="img-changer3">
                             <img src="img/p14.png" alt="" id="img-change">
@@ -164,7 +165,7 @@
                         <p>P1299.00</p>
                     </div>
                 </div>
-                <div class="box box-six">
+                <div class="box box-six" data-aos="fade-up">
                     <a href="https://shopee.ph/Dean.shops-2022-Korean-fashion-high-wedge-sneaker-shoes-for-men-6012-i.36395587.8963121855?sp_atk=c788651a-c3bb-4379-a2e6-ff7b848c180c" target="_blank">
                         <div class="img-container" id="img-changer3">
                             <img src="img/p11.png" alt="" id="img-change">
@@ -180,9 +181,9 @@
             </div>
         </section>
 
-        <section class="section-three">
+        <section class="section-three" id="section-three">
             <div class="box-container">
-                <div class="box box-one">
+                <div class="box box-one" data-aos="fade-up">
                     <div class="img-container">
                         <img src="img/collection.jpg" alt="">
                     </div>
@@ -190,7 +191,7 @@
                         <h3>Catanauan Flagship Store <br> We also support repair your sneaker</h3>
                     </div>
                 </div>
-                <div class="box box-two">
+                <div class="box box-two" data-aos="fade-up" data-aos-delay="100">
                     <div class="img-container">
                         <img src="img/collection2.jpg" alt="">
                     </div>
@@ -202,7 +203,7 @@
             </div>
         </section>
 
-        <footer>
+        <footer id="footer">
             <div class="box-container">
                 <div class="box box-one about-box">
                     <div class="title-container about">
@@ -217,7 +218,7 @@
                     </div>
                 </div>
                 <div class="box box-two address-box">
-                    <div class="title-container address-box">
+                    <div class="title-container address">
                         <h4>Address</h4>
                         <div class="cross">
                             <div class="vert"></div>
@@ -229,40 +230,40 @@
                     </div>
                 </div>
                 <div class="box box-three contact">
-                    <div class="title-container">
+                    <div class="title-container contact">
                         <h4>Contact us</h4>
                         <div class="cross">
                             <div class="vert"></div>
-                            <div class="hor"></div>
+                            <div class="hor-contact"></div>
                         </div>
                     </div>
-                    <div class="text-container footer-text">
+                    <div class="text-container footer-text-contact">
                         <p>patrickjohn.resurreccion18@gmail.com <br>
                         09566723445</p>
                     </div>
                 </div>
                 <div class="box box-four info">
-                    <div class="title-container">
+                    <div class="title-container infor">
                         <h4>Info</h4>
                         <div class="cross">
                             <div class="vert"></div>
-                            <div class="hor"></div>
+                            <div class="hor-info"></div>
                         </div>
                     </div>
-                    <div class="text-container footer-text">
-                        <p><a href="">Terms & Condition</a> <br> <a href="">Privacy Policy</a></p>
+                    <div class="text-container footer-text-info">
+                        <p><a href="https://www.riotgames.com/en/terms-of-service#:~:text=You'll%20need%20a%20Riot,be%20bound%20by%20these%20Terms." target="_blank">Terms & Condition</a> <br> <a href="https://www.riotgames.com/en/privacy-notice" target="_blank">Privacy Policy</a></p>
                     </div>
                 </div>
                 <div class="box box-five contact">
-                    <div class="title-container">
+                    <div class="title-container follow">
                         <h4>Follow me</h4>
                         <div class="cross">
                             <div class="vert"></div>
-                            <div class="hor"></div>
+                            <div class="hor-follow"></div>
                         </div>
                     </div>
-                    <div class="text-container footer-text">
-                        <p><a href="">Github</a><br><a href="">Facebook</a><br><a href="">Twitter</a><br><a href="">Instagram</a></p>
+                    <div class="text-container footer-text-follow">
+                        <p><a href="https://github.com/patjohntrick" target="_blank">Github</a><br><a href="https://www.facebook.com/johnpatrick13/" target="_blank">Facebook</a><br><a href="https://twitter.com/JohnPatrickRes3" target="_blank">Twitter</a><br><a href="https://www.instagram.com/patrickresurreccion/" target="_blank">Instagram</a></p>
                     </div>
                 </div>
             </div>
@@ -278,7 +279,18 @@
             </div>
         </footer>
     </main>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        useClassNames: false,
+        initClassName: false,
+        animatedClassName: 'animated',
+        once: true,
+        easing: 'ease',
+        duration: 1000,
+        offset: 20,
+});
+    </script>
     <script src="https://kit.fontawesome.com/a42e979eb4.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>

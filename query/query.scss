@@ -143,8 +143,46 @@ $p-wieght: 500;
           .footer-text-about.show-text {
             display: block;
           }
+          .footer-text-address {
+            display: none;
+          }
+          .footer-text-address.show-text {
+            display: block;
+          }
+          .footer-text-address {
+            display: none;
+          }
+          .footer-text-address.show-text {
+            display: block;
+          }
+          .footer-text-contact {
+            display: none;
+          }
+          .footer-text-contact.show-text {
+            display: block;
+          }
+          .footer-text-info {
+            display: none;
+          }
+          .footer-text-info.show-text {
+            display: block;
+          }
+          .footer-text-follow {
+            display: none;
+          }
+          .footer-text-follow.show-text {
+            display: block;
+          }
+          .title-container:hover {
+            background-color: rgba(218, 218, 218, 0.377);
+          }
+          .text-container {
+            padding: 0 5px;
+          }
           .title-container {
             border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+            cursor: pointer;
+            padding: 0 5px;
             .cross {
               position: relative;
               padding: 1rem;
@@ -167,7 +205,55 @@ $p-wieght: 500;
                 left: 50%;
                 transform: translate(-50%, -50%);
               }
-              .hor-about.hor-hide {
+              .hor-about.hor-hide-about {
+                opacity: 0;
+              }
+              .hor-address {
+                position: absolute;
+                width: 2px;
+                height: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+              .hor-address.hor-hide-address {
+                opacity: 0;
+              }
+              .hor-contact {
+                position: absolute;
+                width: 2px;
+                height: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+              .hor-contact.hor-hide-contact {
+                opacity: 0;
+              }
+              .hor-info {
+                position: absolute;
+                width: 2px;
+                height: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+              .hor-info.hor-hide-info {
+                opacity: 0;
+              }
+              .hor-follow {
+                position: absolute;
+                width: 2px;
+                height: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+              .hor-follow.hor-hide-follow {
                 opacity: 0;
               }
             }
@@ -203,9 +289,9 @@ $p-wieght: 500;
         background-color: white;
         border-radius: 5px;
         position: absolute;
-        top: 25%;
+        top: 10%;
         left: 50%;
-        transform: translate(-50%, -25%);
+        transform: translate(-50%, -10%);
         width: 350px;
         padding: 1rem;
         h1 {
@@ -291,9 +377,9 @@ $p-wieght: 500;
 @media screen and (max-width: 560px) {
   //////////////////////////////////////////////560px
   main .hero .hero-text .logo {
-    top: 15%;
+    top: 8%;
     left: 50%;
-    transform: translate(-50%, -15%);
+    transform: translate(-50%, -8%);
   }
 }
 @media screen and (max-width: 520px) {
@@ -312,9 +398,9 @@ $p-wieght: 500;
 @media screen and (max-width: 425px) {
   //////////////////////////////////////////////425px
   main .hero .hero-text .logo {
-    top: 7%;
+    top: 5%;
     left: 50%;
-    transform: translate(-50%, -7%);
+    transform: translate(-50%, -5%);
   }
   nav {
     width: 95%;
@@ -343,9 +429,10 @@ $p-wieght: 500;
 @media screen and (max-width: 375px) {
   //////////////////////////////////////////////375px
   main .hero .hero-text .logo {
-    top: 12%;
+    top: 4%;
     left: 50%;
-    transform: translate(-50%, -12%);
+    transform: translate(-50%, -4%);
+    width: 280px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -354,8 +441,13 @@ $p-wieght: 500;
     width: 280px;
   }
   main .hero .hero-text .logo {
-    top: 8%;
+    top: 3%;
     left: 50%;
-    transform: translate(-50%, -8%);
+    transform: translate(-50%, -3%);
+  }
+}
+@media screen and (max-width: 280px) {
+  main .hero .hero-text .logo {
+    width: 250px;
   }
 }
