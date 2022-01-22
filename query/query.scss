@@ -434,6 +434,26 @@ $p-wieght: 500;
     transform: translate(-50%, -4%);
     width: 280px;
   }
+  main {
+    footer {
+      .footer-message {
+        width: 90%;
+        margin: auto;
+        h2 {
+          text-align: center;
+          width: 100%;
+          margin-bottom: 0.3rem;
+        }
+        input {
+          width: 85%;
+          text-align: center;
+        }
+        form {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 320px) {
   //////////////////////////////////////////////320px

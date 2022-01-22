@@ -559,6 +559,8 @@ main footer .footer-message form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main footer .footer-message form input {

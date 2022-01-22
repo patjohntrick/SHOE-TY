@@ -397,6 +397,22 @@
             transform: translate(-50%, -4%);
     width: 280px;
   }
+  main footer .footer-message {
+    width: 90%;
+    margin: auto;
+  }
+  main footer .footer-message h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.3rem;
+  }
+  main footer .footer-message input {
+    width: 85%;
+    text-align: center;
+  }
+  main footer .footer-message form {
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
